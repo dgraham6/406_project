@@ -1,0 +1,30 @@
+date,event_type,description
+1990-11-06,midterm_election,US Midterm Election
+1992-11-03,presidential_election,US Presidential Election
+1993-01-20,inauguration,Clinton Inauguration
+1994-11-08,midterm_election,US Midterm Election
+1996-11-05,presidential_election,US Presidential Election
+1997-01-20,inauguration,Clinton Second Inauguration
+1998-11-03,midterm_election,US Midterm Election
+2000-11-07,presidential_election,US Presidential Election (Bush vs Gore)
+2000-12-13,election_resolution,Bush v Gore Supreme Court Decision
+2001-01-20,inauguration,Bush Inauguration
+2002-11-05,midterm_election,US Midterm Election
+2004-11-02,presidential_election,US Presidential Election
+2005-01-20,inauguration,Bush Second Inauguration
+2006-11-07,midterm_election,US Midterm Election
+2008-11-04,presidential_election,US Presidential Election (Financial Crisis)
+2009-01-20,inauguration,Obama Inauguration
+2010-11-02,midterm_election,US Midterm Election
+2012-11-06,presidential_election,US Presidential Election
+2013-01-20,inauguration,Obama Second Inauguration
+2014-11-04,midterm_election,US Midterm Election
+2016-11-08,presidential_election,US Presidential Election (Trump Surprise)
+2017-01-20,inauguration,Trump Inauguration
+2018-11-06,midterm_election,US Midterm Election
+2020-11-03,presidential_election,US Presidential Election (Pandemic)
+2020-11-07,election_resolution,2020 Election Called
+2021-01-06,certification_event,Electoral Vote Certification
+2021-01-20,inauguration,Biden Inauguration
+2022-11-08,midterm_election,US Midterm Election
+2024-11-05,presidential_election,US Presidential Election
