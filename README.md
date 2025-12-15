@@ -32,4 +32,6 @@ the difference between the errors are not significant.
 
 ## Execution ##
 To successfully reproduce the results found in the study, run the process_data.py to generate the predictions. The current setup for the process_data.py will split the dataset up 
-with 80% training data and 20% testing data with the final 20% of dataset representing the testing dataset.
+with 80% training data and 20% testing data with the final 20% of dataset representing the testing dataset. The process_data.py will generate the prediction plot showing the 
+prediction plotted against the actual returns. The script will also generate the MAE and RMSE for each linear model. There is a variable called models which holds the different
+linear models, with one representing the standard linear model and another representing the election linear model.
