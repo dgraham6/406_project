@@ -12,10 +12,9 @@ elections are associated with changes in S&P 500 market behavior, with a focus o
 
 ## Cross Validation for S&P 500 Market Analysis ##
 
-All of the data is located in the data folder of this branch. This branch holds the contributions made by Dervin Tian to the final project. 
-To replicate the exact results found in the paper, go into the dervin folder where you will find all of the files used to replicate the results found in the paper.
-The files to be taken note of within the dervin folder are the process_data.py script, where the predictions were created, and the hypo-test.py file where the 
-hypothesis tests were conducted.
+Contents:
+- process_data.py
+- hypo-test.py
 
 ### process_data.py ###
 
