@@ -27,10 +27,10 @@ def hypothesis_test(test_statistic, std_dev, two_sided=True):
     return z_score, p_value
 
 # Example: difference in MAE
-test_stat = 0.000562     # observed difference
-std_dev = 0.000758           # estimated SD from simulations
+test_stat = abs(0.00917 - 0.009805)    # observed difference (Replace with difference in MAE or RMSE)
+std_dev =  0.00082          # estimated SD from simulations
 
-z, p = hypothesis_test(test_stat, std_dev, two_sided=True)
+z, p = hypothesis_test(test_stat, std_dev, two_sided=False)
 
 print(f"Z-score: {z:.6f}")
 print(f"P-value: {p:.6f}")
