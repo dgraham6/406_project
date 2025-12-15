@@ -9,6 +9,17 @@ elections are associated with changes in S&P 500 market behavior, with a focus o
   Monte Carlo simulations used to construct realistic null distributions for event-window
   volatility.
 
+# Monte Carlo Hypothesis Testing for S&P 500 Market Analysis
+
+Monte Carlo hypothesis testing is essential in this project because the volatility dynamics of financial markets violate the assumptions required for classical analytical tests. Daily S&P 500 returns exhibit time-varying volatility, heavy tails, and serial dependence, meaning we cannot rely on simple theoretical distributions (e.g., normality) to evaluate whether volatility during political events is unusually high. Instead, we build a data-driven null model that reconstructs typical market behavior and then simulate thousands of alternate return histories in which political events have no effect. This allows us to empirically approximate the sampling distribution of our event-window volatility statistic under realistic market conditions. By comparing the observed volatility to this Monte Carlo null distribution, we can rigorously test whether political events produce abnormal market responses. Thus, Monte Carlo testing provides a principled and flexible framework for inference in settings—like financial data—where analytic theory is inadequate.
+
+
+
+# Monte_Carlo.ipynb
+
+This notebook implements the full Monte Carlo hypothesis-testing framework used in our analysis of political-event volatility in the S&P 500. The notebook reconstructs the null data-generating process by estimating drift, extracting empirical standardized residuals, and preserving the observed time-varying volatility structure. It then simulates thousands of synthetic return paths under the null hypothesis that political events have no effect on market behavior. For each event date, the notebook computes the observed event-window volatility statistic and compares it to its simulated null distribution to generate Monte Carlo p-values. These simulations allow us to assess whether the volatility observed around real political events is unusually large relative to what would occur in typical market conditions. In short, the notebook provides the computational engine that powers the hypothesis test and produces the figures and results reported in the paper.
+
+
 
 # Cross Validation for S&P 500 Market Analysis #
 
