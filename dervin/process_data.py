@@ -95,12 +95,12 @@ test_dates = [all_dates[i] for i in test_idx]
 
 
 models = {
-    "Standard Linear": CustomLinearModel(include_binary=False),
-    # "Binary Feature Linear": CustomLinearModel(include_binary=True, special_dates=expanded_special_dates, inject_signal=0.05)
+    # "Standard Linear": CustomLinearModel(include_binary=False),
+    "Election Linear": CustomLinearModel(include_binary=True, special_dates=expanded_special_dates, inject_signal=0.05)
 }
 
 
-window_size = 3  # e.g., previous 14 days
+window_size = 14  # e.g., previous 14 days
 predictions_window = {name: [] for name in models.keys()}
 dates_window = []
 
@@ -144,10 +144,6 @@ for name, y_pred_window in predictions_window.items():
     results.append([name, mae, rmse, r2, accuracy])
     # Correctly reference the last model object
     last_model = model_objects[name]
-    if last_model.include_binary:
-        print(f"{name} binary feature coefficient (last window):", last_model.coef_[-1])
-    else:
-        print(f"{name} has no binary feature (last window).")
 
 results_df = pd.DataFrame(results, columns=["Model", "MAE", "RMSE", "R2 Score", "Accuracy (%)"])
 print("\nModel Comparison Results (Rolling Window):\n")
